@@ -1,10 +1,22 @@
+import React from 'react';
+import {products} from './components/data'
+import {categories} from  './components/data'
+import  Category from './components/category';
+import  Card from  './components/card'
+import Navbar from  './components/navbar'
+
+
 
 function App() {
   return (
-    <div >
-      <h1>React App</h1>
-    </div>
+    <main >
+      <Navbar/>
+      <Category categories = {categories}/>
+      <Card products = {products} />
+
+    </main>
   );
 }
+
 
 export default App;
