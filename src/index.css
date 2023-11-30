@@ -34,7 +34,7 @@
   
   .category-text p::after {
     content: "";
-    display: block;
+    display: inline-block;
     width: 0;
     height: 2px;
     background-color: #333; /* Color of the underline */
@@ -136,3 +136,117 @@ overflow: hidden;
     display: none;
 }
 
+
+
+@media screen and (max-width:750px){
+    
+    .category{
+   
+        padding: .3rem;
+    }
+    
+    .category-text{
+       
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-right: .5rem;
+        font-size: .9rem;
+       
+        
+    }
+    .icons i{
+
+        /* margin-right: 1rem; */
+        padding: .4rem;
+     
+    }
+
+}
+
+
+@media screen and (max-width:625px){
+    
+    .category{
+   
+   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: center;
+        gap: 1rem;
+        padding: .3rem;
+    }
+    
+    .category-text{
+       
+        display: flex;
+        flex-direction: row;
+        gap: .6rem;
+        font-size: .9rem;
+       
+    }
+
+    .icons{
+
+        font-size: 1.2rem;
+        margin-left: .6rem;
+        
+    }
+
+}
+
+@media screen and (max-width:570px){
+    
+   
+    .category-text{
+
+        flex-direction: column;
+        font-size: .9rem;
+        margin-top: 1rem;
+        text-align: center;
+       
+        
+    }
+
+    .icons{
+
+        font-size: 1.2rem;
+       margin-right: 1rem;
+        
+    }
+
+    
+
+   
+
+}
+
+@media screen and (max-width:355px){
+    
+   
+    .category-text{
+       
+        gap: .2rem;
+        font-size: .6rem;
+     
+       
+    }
+
+    .icons{
+
+        font-size: 1rem;
+       margin-right: .5rem;
+       margin-right: .5rem;
+        
+    }
+    .shopImage{
+
+        width: 80px;
+        height: 80px;
+    }
+
+
+
+      
+}

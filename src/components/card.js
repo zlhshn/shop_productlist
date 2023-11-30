@@ -1,5 +1,5 @@
 import React from "react";
-// import products from "./data";
+
 
 function Card({ products }) {
   console.log(products);

@@ -1,16 +1,10 @@
 import React from "react";
 import shopImage from "../logo.png";
 import { products } from "./data";
-import Card from "./components/card";
-
 import Icon from "./icon";
 
 const Category = ({ categories }) => {
-  const categoryFiltered = (products, selectedCategory) => {
-    return selectedCategory
-      ? products.filter((product) => product.category === selectedCategory)
-      : products;
-  };
+ 
 
   return (
     <div className="category">
@@ -21,7 +15,7 @@ const Category = ({ categories }) => {
             category.charAt(0).toUpperCase() + category.slice(1).toLowerCase();
 
           return (
-            <p key={index} className="category-text" onClick={categoryFiltered}>
+            <p key={index} className="category-text">
               {capitalizedCategory}
             </p>
           );
